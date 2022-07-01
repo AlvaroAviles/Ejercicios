@@ -1,0 +1,16 @@
+package PrimerosPasos;
+
+import javax.swing.JOptionPane;
+
+public class kgslibras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pesokgs= Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el peso en kgs"));
+		double pesolibras=0;
+		pesolibras=(pesokgs/2.2);
+		
+		JOptionPane.showMessageDialog(null, "Usted añadió: "+ pesokgs + " kilogramos. La conversión a libras es: " + pesolibras);
+	}
+
+}
