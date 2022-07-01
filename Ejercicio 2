@@ -1,0 +1,45 @@
+package PrimerosPasos;
+
+import javax.swing.JOptionPane;
+
+public class kgslibrasmenu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int opcion = 0;
+
+		String opciones = JOptionPane.showInputDialog(
+
+				"1. Pasar de kgs a libras" + "\n2. Pasar de libras a kgs" + "\n3. Salir");
+
+		opcion = Integer.parseInt(opciones);
+
+		switch (opcion) {
+
+		case 1:
+
+			int pesokgs = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el peso en kgs"));
+			double pesolibras = 0;
+			pesolibras = (pesokgs / 2.2);
+
+			JOptionPane.showMessageDialog(null,
+					"Usted añadió: " + pesokgs + " kilogramos. La conversión a libras es: " + pesolibras);
+
+			break;
+
+		case 2:
+
+			int pesolibras1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el peso en libras"));
+			double pesokgs1 = 0;
+			pesokgs1 = (pesolibras1 * 2.2);
+
+			JOptionPane.showMessageDialog(null,
+					"Usted añadió: " + pesolibras1 + " libras. La conversión a kgs es: " + pesokgs1);
+		case 3:
+			JOptionPane.showMessageDialog(null, "Salir");
+			break;
+		}
+
+	}
+
+}
